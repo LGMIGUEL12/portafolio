@@ -1,4 +1,3 @@
-var boton = document.getElementById("pokemon2");
 var blocknotas = document.getElementById("blocknotas");
 
 function msj() {
@@ -9,5 +8,4 @@ function msj() {
   );
 }
 
-boton.onclick = msj;
 blocknotas.onclick = msj;
