@@ -8,4 +8,4 @@ function msj() {
   );
 }
 
-blocknotas.onclick = msj;
+
