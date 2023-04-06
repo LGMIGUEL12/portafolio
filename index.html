@@ -7,6 +7,10 @@
     <title>PORTAFOLIO</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="/img/icono.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -15,7 +19,7 @@
       </div>
       <nav>
         <ul class="nav-links">
-          <li><a href="">SERVICIOS</a></li>
+          <li><a href="#">SERVICIOS</a></li>
           <li><a href="#cards">MAS APPS</a></li>
           <li><a href="#redes">REDES</a></li>
         </ul>
@@ -43,13 +47,13 @@
           <div class="contenedorEfecto">
             <span class="presentacion"> <h4>¡¡HOLA!!</h4> </span>
           </div>
-          <h4>Soy Luis Miguel y soy creador de paguinas web</h4>
+          <h4>Soy Luis Miguel y soy desarrollador web</h4>
         </div>
       </div>
     </div>
     <div class="contenedor2">
       <div class="contenedor-texto-pagina">
-        <div class="texto-paginas" id="cards" >
+        <div class="texto-paginas" id="cards">
           <h1>
             <b><i>PAGINAS WEB QUE E CREADO</i></b>
           </h1>
@@ -233,58 +237,70 @@
         </div>
       </div>
     </div>
-
     <div class="espacio">
       <div class="dropdown-container">
         <span>MAS PROGRAMAS</span>
         <ul class="ul-drop">
           <li class="li-drop">
             <a
+              class="a-lista"
               href="https://melodic-moonbeam-b0411b.netlify.app"
               target="_blank"
               >RULETA</a
             >
           </li>
+          <hr />
           <li class="li-drop">DENTRO DE POCO AGREGAREMOS MAS PROGRAMAS</li>
           <!-- <li class="li-drop">link</li>
             <li class="li-drop">link</li> -->
         </ul>
       </div>
     </div>
-    <footer class="redes" id="redes">
-      <a href="https://www.facebook.com/miguel.rv.7758/" target="_blank"
-        ><img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjtJREFUWEftl+FNHDEQhd+rAKgAqCBQAdABqSChgkAFQAVAB1ABdJBLBXAdXDqACgY95D35fPZ6vAYJIfxndbs++/ObN2Ob+GSNn4wHXwPIzPYA/AKg52Z4SuwnAM/heUdSv5uaWyEz08R/AJwGCM9EgrsmeenprD4uIDM7BnAFYMc7cNJvAeCM5EPt/1UgM7sOytTG8ny/qKk1CmRmt8Ernsm8fW5JnpQ6F4E6lZkD+DFCeEnyIvc9CxQ8c+9dMoAXmReAVi+/LNvIWD9znloDCtn02GBgwRyWUtzMDgH8zSxuQXI3fZ8DkpTnDeqckJTXsm0ESP3XQpcDUu3Y8AKRLIVdJWI7FE2FM9eeSW7FH1YGq6wmN+A/kgpJ7BmByH+q4p62H4c7BWqtOTmg1pDfkFT1f2sp0AzAgWdZoU8OqGuMFEib4Vj9SFnfA+iJ5H5JIWtQR13fAwhxYqQK1YDWAGoL8FT8MSBVWaVqqU0BqnlqTnKZka2mngLUtMjWtJ8CVLPBaNqX9p0hhMPxdPgtuZc1RC+DZ4ZMjY+3JRsckVRY1+tQGLBl6+jNsheSgl623s21F8i1uYpYRvRssD1AOrbskFREygqFsOlQ7zmg9QD5DmgDqqegdVTqlcyqKhRB1Q75UxTSBfJ3KeV6r0GtQEVlimmfIw8HN13yUqN7gWTg47jeTFYoCp+yT0VQcg/7XQ3ov24i4Tq9kk3dQPEAQTFV9c1CpdbkM48iKVjVQ+WN/2O+fAPVdH0FiEMaNC4P9igAAAAASUVORK5CYII="
-      /></a>
-      <a href="https://www.instagram.com/_lghack_/" target="_blank"
-        ><img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAApZJREFUWEftVztuVEEQrDoBRIgMcwLwCcApiXGEyExMgDkB5gTYEpET48wZRkIiQcI+AeuAGB8Bn6BQST3W23kz77dP8gbucHd6pl51dU0PsWbBNcODO0B9FRnMkKSnAO4BeN63afb/OYBrkosheb2AJO0C+ABgY8iGHWuuAOyTPOnapwpI0n0AXycw0ofbjO2Q/Fda2AXIic8iyV91RvKs77T8//gwl3mvsd85ya3BgKJMx5HwhuSXsUBK6yXtR/n9d3HfIkOSXO9HAE5IWkOTQpJZeA3gIYDvJI8kWdxPAFyRfJxv3AIU3fQ7Fm6RdOkmhaS3AD5H8g+SLzL2N/PuKwFyvX95E5KdXSgp6SJ1oJm1Pg6dL+kVgNOkQ7MtyWv/1j64BOimzjVAwaI1Zm8qhctijSwkuWQPAPwh+TOAKpI+kvR5N9EF6JJk68CspN7o0qzEjmbX+kjRKskqgC5Itly5IcprALu5FUh6CcBdaVdfkNzMKZQ0iaEWoNDMpzjA5lb0pQBlU3W8J3nQBDUnIAPYdplK5cwOTe3dso45AaVDDkm6w6ohyay8K5XttgG12JwTUCpZUay3UTKXaX1EHR6SdOTxwea31GnRYTZNjy81L5vU9sXLr2CMBtg0xqaZzmqM1bssQNn8mq7clJDd26ZZHFvHinrs5er16XI1AAt+yQgzsY++XE35LONHyaRGjx8h3DSgVUfNLlPsMczUFH6JWPhLUZsYPSWmEXYvzTdTQaS8hnsX7zj/OHTIdxcdkPw2FlQM+X4seO5JHVicJPoAmU57THp5jMVSW38RHWhZtGLoQ9Ff56F/lfD85IditQM7GcpPDu8x5WNfsGbCVjDPU3oVSqbk9pZsyqar5NwB6mPvP+HKijTEiQEMAAAAAElFTkSuQmCC"
-      /></a>
+    <footer class="redes1" id="redes">
+      <div class="redes">
+        <div class="icon">
+          <a
+            class="redes-icon"
+            href="https://www.facebook.com/miguel.rv.7758/"
+            target="_blank"
+            ><div class="op icon__facebook">
+              <ion-icon class="fa fa-facebook"></ion-icon>
+            </div>
+          </a>
+          <a
+            class="redes-icon"
+            href="https://twitter.com/Luismig00214101"
+            target="_blank"
+            ><div class="op icon__twitter">
+              <i class="fa fa-twitter"></i>
+            </div>
+          </a>
+          <a
+            class="redes-icon"
+            href="https://github.com/LGMIGUEL12"
+            target="_blank"
+            ><div class="op icon__whatsapp">
+              <ion-icon class="fa fa-github"></ion-icon>
+            </div>
+          </a>
 
-      <a href="https://twitter.com/Luismig00214101" target="_blank"
-        ><img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAg9JREFUWEftV+8xw0EU3K2ADugAFaACOiAVoAJUgA6oQFRACVSADqhgzZq7TMRd7l0kJh/yZnwwv3fv9vbt+xNiyYxLhgcrQK2MrBj6d4YkbQM4AbAJYA/AM4AnADck3zIgSev2IenvI/uVMknfgUjetl4z+V3SKYCrKecGAAzqAMAxgJ1xkD5XApSDDnpASToEcN/xiDOS15P+JUCmdzc5hkAl+l8BOA0RM/tmasdMkfzIh0qAhonS7OP/DWx0qJCqXnYc4jNJo6mhkg4M5pTkXen5ki4AnEeoST4viZkfYGoacmU8VoIbmBlzxYyCSbIWXFlRuyTpR/yyYmOU5BwfBaIbVE6lHxK1oqBrDFkPFraZyOKOXhT12yfpO9oMScqi9sujVRMFkv26APUKtBcMSFZnaK1Tu6csyh5IWhZFq4l6kSxVBV0UdYYtybPGwDbmSJWboQdqtclWcynJZbyWQHmCz8Oq/ScHbwGqNchZwDXZmZoyf+xokBGAoUHdXGEljU//yMUln6mVNX6gCSgxZT35z+W61YnKg9QLX1XI3YASKFecB2hP9+4CE9GQq8uMGIxX2x7zquKVJcRMscpSqftyl/uspf6edp3i8Gy9qDY6vKS5MRpY1Jye29KeHA0QSVkWc9518jriy50K78XeiYaTvx56QMwk6lkv6D0XKvveoH/xXwFqsbdiqMXQFypEsyWXPLhaAAAAAElFTkSuQmCC"
-      /></a>
-
-      <a href="https://github.com/LGMIGUEL12" target="_blank"
-        ><img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAo1JREFUWEftV4tRFUEQ7I5AiECIAIhAjECJQIgAiQCMAIxAiEAyECIQMoAMyKCpln1Xe3v7uwNKynKrXh31bt5sb2/PTEO8scU3hgf/BiBJ2wC+APBzLTxN9g2Ah/C8JHk99wZmMSTpBMBhANGzl8GdAfhO0n83VxcgSZ8BnALYaGbMB9wBOCJ52fp9E1Bg5biVqPP9GcmjWmwVkKTzoJXO/brCzkkelCKLgCR9DdfUtcvMIGvK+ScrCyho5mcSvRfEvA/gQycAV5lZtoZ+pflymioBcoL3UYJbki7xP0vSLgCf0GV+lWzkd4711QwiluS4+CDeYyetvgkgSWbgR7LJNUlvtHhlADnXN5JuJcPKAUrZcfANyZ3FaJ5YTRlyugeS60VAoQP/zmz8Egz5+j5lcn8kOVz7iKFKZW2SNHOLlyQ3VWvuXZJkVHEpoBytz2YnKoYcS6P8PYAmwltKU6Hrj/SZAsoJ+rUBgeSAowdQsavOZao0F2uA/oaG7kkOLiJlqFSa671+psaaJHuitMqqoi4N1GfrqGJjRrlThjyDco3RBz8g6UE5e1UarnOVG6PfSoor7RbAVoRgZUe7mqQk+21b3tG8ivKN9OPvW8PVRsq6MjNx27f4/Zl45QDCV+/J3hrItrU+ZHm4Bpbc4lfM2HIakAHEbBU7eKfTvLdNadqPAMgniw3VZjiCT2OmfJUnJdNeMHip9kbaWb2sWdjYF1V9cLpTMHCpQ4zDilU7x+T72pyoKegGoAuSPmx29fwblHOQk3KNs1cANftZE1CkKesnFnVWAwUNWsD7sRFbzFBycrPlkjawGqBVgzUQi7+7oXYxlBHtRktLdoitmBxLiwDNnh0zfvAfUIusR5V8JTRuADE9AAAAAElFTkSuQmCC"
-      /></a>
-
-      <a
-        href="https://www.linkedin.com/in/luis-miguel-ramos-vasquez-34967025b/"
-        target="_blank"
-      >
-        <img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAZJJREFUWEftlr0uRFEQx3//QqHCE9hOJyQaFd6AloJOVHgDXsBHJyoSevsENhJKWfGRUHkCWV5gZOSsbO49e+9K7rWb7J1mizNn5nf/Z2Z2xICZBoyHCijvRaIKmdk0sA1MAc/AgaTXvGBFnKeAzGwWuAVGOxJ8APOS3opImhUjBnQBrEUunUja6gfQPeAqJe1G0kI/gC6B1UjiU0mb/QCaA+6AkY7kX6GGXv4dyBOamUPthC57Cl32WDaMxx++wWhmNaAlqdWLwrG2nwEOI5d3JTXDk2b6mNlyGKyLiThXwLkk/41aDMiDXEe8lyQ1AlBXH2ADWM9R41iS12jKigbyL3d1erGVmFJFA/UC0vZpSkoN4DKBHoBxYDKDciJZ7GUA1b2O2onMzOvNn3Isqy7bZ0UDfQK15Feb2VHouiSTd66f/VrRQHVJqaIOKsU6d1/SXplAqQQ5Y6IC+nmN6sk6irKqobw/10qhSiGfGb5y+pKVtDNJ72GudPNptJe4zssZMVP+w7fk/2Vjc99KoTzFvgEcqDs0f4FyZwAAAABJRU5ErkJggg=="
-      /></a>
-
-      <div class="nombre">
-        <img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAY5JREFUWEftl31RAzEUxHcd4AAcgANAAUUB4KA4AAWAAkAB4IA6oA7AAQ4es53k5prmLsm1VwqT/NOZJnn5vd2XjyN2rHHHeFCBUo5Uhf6+QmZ2BODCZfJM8iOVVUm/mR0E8T/b85dqyMwuAdwB2GsNuiF5W7Jo11gzm7r4fsg3gNN20iHQO4DjSMBXAFckFaC4mZkSVKJKOGwzkif+zxDIelaTtOelFroSeASgUog2kg1HCZAPNiX5kCNTRwmsTF0XSAF7LXQWSZVJDvgmgLRO1EJn0QsA7aastimgFQsju+hXgLyF+s2yKKTctEJZKvQN+hdAXy7D/YFy9M4fotDM1ccTgLNCqDd3QuuoiN0CGATkj/fCnXRN8l4JmFnXtbQekAuua0AZd1koiybta2ZUIAelCzNm4cKi8CIeHcjXUWBhY1FYZ1sDalmoWuh8zG0VKGfXVaCUSkMVUg0cRoIvPTNTi8f6e4DmJJvXZPhi1NtWB1kINRbQHIBeoDo0F61+uabsrgpVhVIKpPp/AM3n4iXLDKhNAAAAAElFTkSuQmCC"
-        />
-
-        <h2 class="nombre">ramosvasquezluismiguel@gmail.com</h2>
+          <a
+            class="redes-icon"
+            href="https://www.linkedin.com/in/luis-miguel-ramos-vasquez-34967025b/"
+            target="_blank"
+            ><div class="op icon__linkedin">
+              <ion-icon class="fa fa-linkedin"></ion-icon>
+            </div>
+          </a>
+          <a
+            class="redes-icon"
+            href="https://www.instagram.com/_lghack_/"
+            target="_blank"
+            ><div class="op icon__instagram">
+              <ion-icon class="fa fa-instagram"></ion-icon>
+            </div>
+          </a>
+        </div>
       </div>
     </footer>
     <script src="index.js"></script>
