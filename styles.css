@@ -5,15 +5,52 @@
 }
 
 /* header */
-
 .header {
-  background-color: rgb(88, 88, 94);
+  background-color: #323444;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 85px;
-  padding: 5px 10px;
-  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.nav a {
+  padding: 14px 20px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav a {
+    padding: 10px 0;
+  }
+}
+
+#contenido {
+  margin-top: 80px;
 }
 
 .header .logo {
@@ -30,48 +67,9 @@
   transform: scale(1.2);
 }
 
-.header .nav-links li {
-  list-style: none;
-}
-
-.header .nav-links li {
-  display: inline-block;
-  padding: 0 20px;
-}
-
-.header .nav-links li:hover {
-  transform: scale(1.1);
-}
-
-.header .nav-links a {
-  font-size: 700;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-.header .nav-links li a:hover {
-  color: rgb(3, 3, 44);
-}
-
-.header .btn button {
-  font-weight: 700;
-  color: rgb(0, 0, 0);
-  padding: 9px 25px;
-  background: rgb(88, 88, 94);
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-.header .btn button:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  transform: scale(1.1);
-}
-
 .contenedor1 {
   display: flex;
+  margin-top: 300px;
 }
 
 /* boton de brillo en la paguina */
@@ -100,7 +98,8 @@ body {
 }
 
 .contenedorPrincipalBoton {
-  width: 10%;
+  position: relative;
+  left: 20px;
 }
 
 .cajaForm,
@@ -120,12 +119,13 @@ body {
 .cajaInput[type="range"] {
   background-color: transparent;
   border-radius: 0.75em;
-  box-shadow: -0.1em -0.1em 0.1em var(--l3) inset,
-    0.1em 0.1em 0.1em var(--l1) inset;
+  box-shadow: -18px 16px 8px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: -10px -16px 8px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: -18px 16px 8px 0px rgba(0, 0, 0, 0.7);
   cursor: pointer;
   transform: rotate(-90deg);
   height: 1.5em;
-  width: 6em;
+  width: 8em;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -191,13 +191,10 @@ body {
 
 .contenedor-perfil {
   width: 300px;
-  margin: auto;
   padding: 50px;
   position: relative;
+  left: 25%;
   background-color: #323444;
-  top: 90px;
-  left: -5%;
-  margin-bottom: 50px;
   border-radius: 20px;
   color: white;
   box-shadow: -10px 9px 14px 2px rgba(0, 0, 0, 0.6);
